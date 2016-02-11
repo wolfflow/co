@@ -233,5 +233,5 @@ function isGeneratorFunction(obj) {
  */
 
 function isObject(val) {
-  return Object == val.constructor;
+  return val.constructor && Object == val.constructor;
 }
